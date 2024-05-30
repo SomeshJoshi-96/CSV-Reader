@@ -1,11 +1,11 @@
 import mongoose from "mongoose";
 
-const baseUrl = process.env.MONGODB ;
+const baseUrl = process.env.MONGODB;
 
 export const connectUsingMongoose = async () => {
   try {
-    console.log(baseUrl)
-    await mongoose.connect(`mongodb://${baseUrl}/csvReader`, {
+    console.log(baseUrl);
+    await mongoose.connect(`${baseUrl}`, {
       // useNewUrlParser: true,
       // useUnifiedTopology: true,
     });
