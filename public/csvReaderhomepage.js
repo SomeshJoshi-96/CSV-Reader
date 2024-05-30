@@ -35,7 +35,7 @@ Array.from(deleteFiles).forEach((deleteFile) => {
 
 async function deleteFilewithID(id) {
   try {
-    const response = await fetch(`http://localhost:8000/api/csv/delete/${id}`, {
+    const response = await fetch(`/api/csv/delete/${id}`, {
       method: "delete",
     });
 
