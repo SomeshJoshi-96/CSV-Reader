@@ -1,0 +1,124 @@
+::-webkit-scrollbar {
+  display: none;
+}
+
+#mainContainer {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgb(144, 189, 207), white);
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+}
+
+#csvdataTablediv {
+  margin-top: 30px;
+  overflow-x: auto;
+  overflow-y: auto;
+  max-width: 100%;
+  max-height: 100%;
+}
+
+#csvdataTable {
+  background-image: linear-gradient(rgb(144, 189, 207), white);
+  color: black;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.tableHead th {
+  border: 1px solid black;
+  padding: 10px;
+  background-color: rgb(144, 189, 207);
+  cursor: pointer;
+}
+
+#csvdataTable tbody td {
+  border: 1px solid black;
+  padding: 10px;
+  white-space: nowrap;
+  background-color: white;
+}
+
+.pagination {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.pagination button {
+  padding: 5px 10px;
+  margin: 0 5px;
+  cursor: pointer;
+  outline: 1px solid black;
+  border-radius: 1px;
+  border: none;
+}
+
+.hidden {
+  display: none;
+}
+
+.pagination button.active {
+  background-color: rgb(144, 189, 207);
+  color: white;
+}
+
+#headerFilterdropdown {
+  padding: 2px;
+  background-color: rgb(144, 189, 207);
+}
+.newheader {
+  cursor: pointer;
+}
+
+.newheader:hover {
+  background-color: white;
+}
+
+#searchDiv {
+  display: flex;
+  background-color: rgb(169, 217, 236);
+  padding: 2px;
+  flex-direction: row;
+  border-radius: 12px;
+  margin-top: 20px;
+  justify-content: space-around;
+}
+
+#filterDropdown {
+  background-color: rgb(144, 189, 207);
+  color: black;
+  border: none;
+}
+
+#searchBytextInput {
+  background-color: rgb(144, 189, 207);
+  border: none;
+  border-radius: 5px;
+  color: black;
+  padding: 5px;
+}
+
+#searchBytextInput::placeholder {
+  color: gray;
+}
+
+#searchButton button {
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  font-size: 1rem;
+  background-color: rgb(144, 189, 207);
+  border: none;
+  padding: 5px;
+  border-radius: 10px;
+  margin-left: 50%;
+}
+
+#searchButton button:active {
+  background-color: #435765;
+}

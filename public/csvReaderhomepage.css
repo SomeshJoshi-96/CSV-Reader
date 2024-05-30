@@ -1,0 +1,131 @@
+#mainContainer {
+  width: 100vw;
+  height: 100vh;
+  background-image: linear-gradient(rgb(144, 189, 207), white);
+  display: flex;
+  flex-direction: column;
+  padding: 15px;
+  align-items: center;
+}
+
+#csvTablediv {
+  margin-top: 30px;
+  width: 100%;
+}
+
+#csvTable {
+  background-image: linear-gradient(rgb(144, 189, 207), white);
+  color: black;
+  width: 100%;
+  border-collapse: collapse;
+  border: 1px solid black;
+}
+
+.tableHead th {
+  border: 1px solid black;
+  padding: 15px;
+  background-color: rgb(144, 189, 207);
+  font-size: 1.2rem;
+}
+
+#csvTable tbody td {
+  border: 1px solid black;
+  padding: 10px;
+  font-size: 1rem;
+}
+
+.viewDelete {
+  display: flex;
+  justify-content: space-around;
+}
+
+.viewFile {
+  cursor: pointer;
+}
+
+.fa-eye {
+  transition: all 0.2s ease-in-out;
+}
+
+.fa-eye:hover {
+  color: green;
+  font-size: 1.3rem;
+}
+
+.deleteFile {
+  cursor: pointer;
+}
+
+.fa-trash {
+  transition: all 0.2s ease;
+}
+
+.fa-trash:hover {
+  color: red;
+  font-size: 1.3rem;
+}
+
+#addCsv {
+  margin-top: 100px;
+}
+#addCsv button {
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  outline: none;
+  color: black;
+  font-size: 2.2rem;
+  background-color: rgb(144, 189, 207);
+  border: none;
+  padding: 20px;
+  border-radius: 50%;
+  box-shadow: 0 4px #999;
+}
+
+#addCsv button:hover {
+  background-color: #435765;
+}
+
+#addCsv button:active {
+  background-color: #435765;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}
+
+.errorDiv {
+  color: red;
+}
+
+.modal-content {
+  background-color: white;
+  color: 1px solid black;
+}
+
+.modal-content input {
+  background-color: rgb(144, 189, 207);
+  border: 1px solid black;
+}
+
+.modal-content input:focus {
+  background-color: rgb(144, 189, 207);
+  border: 1px solid black;
+  box-shadow: none;
+}
+
+#addCsvformSubmit {
+  color: black;
+  background-color: rgb(144, 189, 207);
+  border: 1px solid black;
+}
+
+#addCsvformSubmit:hover {
+  background-color: #435765;
+}
+
+.modal-header {
+  border-bottom: 1px solid black;
+}
+
+.btn-close:focus {
+  box-shadow: none;
+}
